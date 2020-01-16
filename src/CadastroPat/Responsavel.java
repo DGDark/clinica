@@ -18,4 +18,37 @@ public class Responsavel {
         this.email = email;
         this.telefone = telefone;
     }
+
+    public void retornarDadosBasicos(){
+        if(nome == "DGDark"){
+
+        }
+        System.out.println("Nome: " + nome + "\n" + "E-mail: " +email);
+
+    }
+
+
+    public String retorTodosDados() {
+        return "Responsavel{" +
+                "nome='" + nome + '\'' +
+                ", Sobrenome='" + Sobrenome + '\'' +
+                ", Cep='" + Cep + '\'' +
+                ", numeroResidencial='" + numeroResidencial + '\'' +
+                ", idade=" + idade +
+                ", email='" + email + '\'' +
+                ", telefone='" + telefone + '\'' +
+                '}';
+    }
+
+    public boolean idadeMedia(){
+        if(idade >= 18) {
+            return true;
+        }
+        return false;
+    }
+
+
+
+
 }
+
