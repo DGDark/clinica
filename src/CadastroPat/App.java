@@ -21,7 +21,9 @@ public class App {
                 Pet.TiposCuiodado.Fisioterapia.toString()
         );
 
+            pessoa1.setNome("DGDarkk");
 
+            System.out.println(pessoa1.retorTodosDados());
             System.out.println("Maior de idade: " +pessoa1.idadeMedia());
             System.out.println(pet.retornardadosPets());
 

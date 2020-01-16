@@ -1,14 +1,72 @@
 package CadastroPat;
 
 public class Responsavel {
-    String nome;
-    String Sobrenome;
-    String Cep;
-    String numeroResidencial;
-    int idade;
-    String email;
-    String telefone;
+    //"private" serve para privar informação
+    private String nome;
+    private String Sobrenome;
+    private String Cep;
+    private String numeroResidencial;
+    private int idade;
+    private String email;
+    private String telefone;
 
+    //get faz a leitura do que esta no private
+    public String getNome() {
+        return nome;
+    }
+    // o setter para modificar oque esta no private
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSobrenome() {
+        return Sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        Sobrenome = sobrenome;
+    }
+
+    public String getCep() {
+        return Cep;
+    }
+
+    public void setCep(String cep) {
+        Cep = cep;
+    }
+
+    public String getNumeroResidencial() {
+        return numeroResidencial;
+    }
+
+    public void setNumeroResidencial(String numeroResidencial) {
+        this.numeroResidencial = numeroResidencial;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+        //trazer todas as clase
     public Responsavel(String nome, String sobrenome, String cep, String numeroResidencial, int idade, String email, String telefone) {
         this.nome = nome;
         this.Sobrenome = sobrenome;
